@@ -1,0 +1,261 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+* {
+text-decoration: none;
+}
+
+.top_nav{
+    padding: 10px;
+    font-family: 'Montserrat';
+    background-color: #F0EABE;
+}
+
+h1{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+.top_nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 14px;
+}
+
+.top_nav ul li{
+    padding-left: 22px;
+}
+
+.top_nav ul li a{
+    color: black;
+}
+
+.top_nav ul li a:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #000;
+    transition: width .3s;
+}
+
+.top_nav ul li a:hover::after{
+    width: 100%;
+}
+
+.inside_div{
+    background-color: #21E1E1;
+    width: auto;
+    height: 568px;
+}
+
+/* FLEXBOX */
+
+.flexbox-form{
+    background-color: #F0EABE;
+    margin: auto;
+    height: 518px;
+    padding: 10px 10px 20px;
+}
+
+.flexbox-container{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 50px;
+}
+
+.flexbox-container > *{
+    flex: 1 1 33%;
+}
+
+.flexbox-item{
+    background-color: #3B9AE1;
+    border: 1px solid #111;
+    padding: 10px;
+    height: 108px;
+    min-width: 100px;
+    text-align: center;
+    line-height: 108px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    margin: 2px;
+}
+
+
+.flexbox-box-1{
+    background-image: url(./images/Mcdonalds.gif);
+    background-size: 100% 130px;
+    background-size: cover;
+}
+
+.flexbox-box-2{
+    background-image: url(./images/Jollibee.png);
+    background-size: contain;
+    background-size: cover;
+}
+
+.flexbox-box-3{
+    background-image: url(./images/kfc.jpg.png);
+    background-size: contain;
+    background-size: cover;
+}
+
+.flexbox-box-4{
+    background-image: url(./images/greenwich.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flexbox-box-5{
+    background-image: url(./images/bonchon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flexbox-box-6{
+    background-image: url(./images/chowking.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flexbox-box-7{
+    background-image: url(./images/mi.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flexbox-box-8{
+    background-image: url(./images/bk.gif);
+    background-size: 100% 150px;
+}
+
+.flexbox-box-9{
+    background-image: url(./images/popeyes.png);
+    background-size: 100% 150px;
+}
+
+.flexbox-box-10{
+    background-image: url(./images/tokyotokyo.png);
+    background-size: 100% 150px;
+}
+
+@media only screen and (min-width: 700px){
+    .flexbox-form{
+        width: 700px;
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    .flexbox-form{
+        height: 800px;
+    }
+    
+}
+
